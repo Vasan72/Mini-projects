@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-origin: padding-box;
+  font-family: "Poppins", sans-serif;
+}
+body{
+  height: 100vh;
+  width: 100vw;
+  background-color: #eff0f3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container h1 {
+  font-size: 30px;
+  margin-bottom: 15px;
+  color: #0d0d0d;
+}
+
+button {
+  outline: none;
+  cursor: pointer;
+  border: none;
+  padding: 0.5rem 0.6rem;
+  margin: 2px;
+  font-family: inherit;
+  font-size: inherit;
+  position: relative;
+  display: inline-block;
+  letter-spacing: 0.05rem;
+  font-weight: 700;
+  font-size: 17px;
+  border-radius: 500px;
+  overflow: hidden;
+  background: #f4944b;
+  color: #0d0d0d;
+}
+
+button span {
+  position: relative;
+  z-index: 10;
+  transition: color 0.4s;
+}
+
+button:hover span {
+  color: black;
+}
+
+button::before,
+button::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+button::before {
+  content: "";
+  background: #f59c58;
+  width: 120%;
+  left: -10%;
+  transform: skew(30deg);
+  transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+}
+
+button:hover::before {
+  transform: translate3d(100%, 0, 0);
+}
+
+.searchBar {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.input-box {
+  padding: 5px 15px 5px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #0d0d0d;
+  min-width: 50px;
+  width: 300px;
+  height: 35px;
+  border: 2px solid #f0944f;
+  border-radius: 30px;
+  outline: 0;
+  margin-right: 10px;
+}
+
+
+#heroes-img {
+  max-height: 600px;
+  max-width: 600px;
+  background-color: #f0944f;
+  border-radius: 30px;
+  text-align: center  ;
+}
+.allDataDiv{
+  width: 280px;
+  height: 420px;
+  background-color: #eff0f3;
+  margin: 30px;
+  border-radius: 30px;
+}
+#heroes-img h2 {
+  padding: 10px;
+  color: #0d0d0d;
+  font-size: 22px;
+}
+#heroes-img img {
+  border-radius: 15px;
+}
+
